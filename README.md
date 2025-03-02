@@ -8,29 +8,28 @@ This repository contains a simulation of the classic ["Dining Philosophers"](htt
 
 ## Rules and Requirements
 
-    Philosophers can eat, think, or sleep.
-    While eating, philosophers hold two forks, one in each hand.
-    Philosophers put their forks back on the table after eating and then sleep.
-    Philosophers start thinking after sleeping.
-    The simulation stops when a philosopher dies of starvation.
-    Philosophers do not communicate with each other.
-    Philosophers do not know if another philosopher is about to die.
-    Philosophers should avoid dying at all costs.
+Philosophers can eat, think, or sleep. <br/>
+While eating, philosophers hold two forks, one in each hand.<br/>
+Philosophers put their forks back on the table after eating and then sleep.<br/>
+Philosophers start thinking after sleeping.<br/>
+The simulation stops when a philosopher dies of starvation.<br/>
+Philosophers do not communicate with each other.<br/>
+Philosophers do not know if another philosopher is about to die.<br/>
+Philosophers should avoid dying at all costs.<br/>
     
 ## Concurrency and Safety
 
-    Each philosopher is represented by a thread.
-    Forks are shared resources protected by mutexes to prevent data races.
-    Global variables are forbidden.
+Each philosopher is represented by a thread.<br/>
+Forks are shared resources protected by mutexes to prevent data races.<br/>
+Global variables are forbidden.<br/>
 
 ## Program Arguments
 
-    number_of_philosophers: The number of philosophers and forks.
-    time_to_die (ms): Time after which a philosopher dies if they haven't eaten.
-    time_to_eat (ms): Time a philosopher spends eating.
-    time_to_sleep (ms): Time a philosopher spends sleeping.
-    number_of_times_each_philosopher_must_eat (optional): If specified, the simulation stops after each philosopher has eaten this many times. If not specified, the simulation stops when a philosopher dies.
-
+number_of_philosophers: The number of philosophers and forks.<br/>
+time_to_die (ms): Time after which a philosopher dies if they haven't eaten.<br/>
+time_to_eat (ms): Time a philosopher spends eating.<br/>
+time_to_sleep (ms): Time a philosopher spends sleeping.<br/>
+number_of_times_each_philosopher_must_eat (optional): If specified, the simulation stops after each philosopher has eaten this many times. If not specified, the simulation stops when a philosopher dies.<br/>
 
 
 ## State Logging
@@ -40,13 +39,6 @@ This repository contains a simulation of the classic ["Dining Philosophers"](htt
     timestamp_in_ms X is sleeping
     timestamp_in_ms X is thinking
     timestamp_in_ms X died
-
-
-## Files and Compilation
-
-    Program Name: philo
-    Turn in files: Makefile, *.h, *.c in the philo/ directory.
-    Makefile Targets: NAME, all, clean, fclean, re
 
 ## Functions Used
 
